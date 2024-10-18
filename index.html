@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setlist to Spotify Playlist</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div id="userInfo">
+            <button id="loginSpotify">Iniciar sesión con Spotify</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Generar Playlist de Spotify a partir de Setlists</h1>
+
+        <form id="setlistForm">
+            <label for="bandName">Introduce el nombre de la banda:</label>
+            <input type="text" id="bandName" name="bandName" required>
+            <button type="submit">Buscar Setlist</button>
+        </form>
+
+        <div id="setlistResult"></div>
+
+        <button id="exportPlaylist" disabled>Exportar Playlist a Spotify</button>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
